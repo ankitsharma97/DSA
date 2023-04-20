@@ -84,7 +84,7 @@ void Delete(node *head,int pos)
     if(pos==1)
     {
         q=p->next;
-        q->prev-NULL;
+        q->prev=NULL;
         first=q;
 
     }

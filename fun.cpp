@@ -42,14 +42,43 @@
 
 
 
-#include<stdio.h>
+// #include<stdio.h>
 
+// int main()
+// {
+//     int physics, chemistry;
+//     printf("enter physics marks\n");
+//     scanf("%d",&physics);
+
+//     printf("enter chemistry marks\n");
+//     scanf("%d", &chemistry);
+// }
+
+
+#include<bits/stdc++.h>
+using namespace std;
 int main()
 {
-    int physics, chemistry;
-    printf("enter physics marks\n");
-    scanf("%d",&physics);
+    int N;
+    cin>>N;
+    string s;
+    int k=0;
+       while(N!=0)
+        {
+            if(N%2==0)
+            {
+                s[k]='0';
+            }
+            else
+            {
+                s[k]='1';
+            }
+            k++;
+            N=N/2;
+        }
+        // for(int i=0;i<s.size();i++)
+        // {
 
-    printf("enter chemistry marks\n");
-    scanf("%d", &chemistry);
+        // }
+        cout<<s;
 }
